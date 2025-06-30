@@ -12,7 +12,7 @@ Parameters:
       - "prod"
 
 Resources:
-  Mys3Bucketcicd:
+  Mys3Bucket:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
@@ -25,5 +25,5 @@ Resources:
 Outputs:
   BucketName:
     Description: "The name of the S3 bucket"
-    Value: !Ref Mys3Bucketcicd
+    Value: !Ref Mys3Bucket
   
