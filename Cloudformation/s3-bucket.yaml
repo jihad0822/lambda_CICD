@@ -15,7 +15,7 @@ Resources:
   Mys3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
+      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket808'
       Tags:
         - Key: Environment
           Value: !Ref Environment
