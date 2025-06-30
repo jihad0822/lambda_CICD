@@ -8,7 +8,7 @@ on:
      - 'lamda/'
   
 jobs:
-  deploy-lamda:  # name of our job
+  lamda:  # name of our job
     runs-on: ubuntu-latest #specifies the Runner
     steps: 
       - uses: actions/checkout@v2
