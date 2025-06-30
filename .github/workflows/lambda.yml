@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'lambda/**'
+  workflow_dispatch:
 
 jobs:
   deploy-lambda:
@@ -36,7 +37,4 @@ jobs:
           zip -r lambda.zip .
           aws lambda update-function-code --function-name my-test-cicd-lambda --zip-file fileb://lambda.zip
 
-      - name: Verify ZIP file
-        run: |
-          cd lambda
-          ls -l lambda.zip
+     
