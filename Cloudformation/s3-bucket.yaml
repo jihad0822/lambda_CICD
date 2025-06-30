@@ -25,5 +25,5 @@ Resources:
 Outputs:
   BucketName:
     Description: "The name of the S3 bucket"
-    Value: !Ref Mys3Bucket
+    Value: !Ref Mys3Bucketcicd
   
